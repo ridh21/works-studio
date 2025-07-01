@@ -1,8 +1,3 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
-});
-
 function animate() {
   var tl = gsap.timeline();
 
@@ -25,11 +20,22 @@ function animate() {
   tl.to(
     "#loader",
     {
-      delay: 0.4,
+      delay: 0.2,
       color: "black",
     },
     "anim"
   );
+  tl.to("#loader",{
+    opacity : 0
+  })
+  tl.to("#loader",{
+    display : "none"
+  })
 }
 
 animate();
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true,
+  });

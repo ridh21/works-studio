@@ -11,6 +11,12 @@ body {
   width: 100%;
 }
 
+
+
+#main{
+    background-color: black;
+}
+
 #loader {
   height: 100vh;
   width: 100%;
@@ -21,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 99;
 }
 
 #yellow1 {
@@ -76,7 +83,7 @@ body {
 #page2 {
   height: 100vh;
   width: 100%;
-  background-color: rgb(134, 181, 106);
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
